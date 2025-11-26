@@ -1,42 +1,42 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/**
+ * Estilos de la aplicación de Bebederos
+ */
+
+/* Reset básico */
+* {
+    box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Contenedor de la aplicación */
+.App {
+    min-height: 100vh;
+    background-color: #f5f5f5;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Estilos para las tarjetas de bebederos */
+.bebedero-card {
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.bebedero-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.card {
-  padding: 2em;
+/* Estilos para el botón */
+button {
+    transition: all 0.3s ease;
 }
 
-.read-the-docs {
-  color: #888;
+button:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
+
+/* Lista de bebederos */
+.lista-bebederos h2 {
+    color: #333;
+    margin-bottom: 16px;
+    border-bottom: 2px solid #2196F3;
+    padding-bottom: 8px;
 }

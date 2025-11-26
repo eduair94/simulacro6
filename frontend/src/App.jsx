@@ -1,35 +1,56 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+/**
+ * Componente principal de la aplicación
+ * 
+ * Este es el componente raíz que contiene toda la aplicación.
+ * Renderiza el contenedor de bebederos con la funcionalidad completa.
+ */
+
+import BebederosContainer from './components/BebederosContainer';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    return (
+        <div className="App">
+            {/* Header de la aplicación */}
+            <header style={{
+                backgroundColor: '#2196F3',
+                color: 'white',
+                padding: '20px',
+                textAlign: 'center',
+                marginBottom: '20px'
+            }}>
+                <h1 style={{ margin: 0 }}>�� Sistema de Bebederos</h1>
+                <p style={{ margin: '8px 0 0 0', opacity: 0.9 }}>
+                    Simulacro 6 - Gestión de Bebederos Públicos
+                </p>
+            </header>
+            
+            {/* Contenido principal */}
+            <main style={{
+                maxWidth: '900px',
+                margin: '0 auto',
+                padding: '0 20px'
+            }}>
+                {/* 
+                  BebederosContainer incluye:
+                  - Botón de filtro (Punto 7)
+                  - ListaBebederos (Punto 6)
+                */}
+                <BebederosContainer />
+            </main>
+            
+            {/* Footer */}
+            <footer style={{
+                textAlign: 'center',
+                padding: '20px',
+                marginTop: '40px',
+                borderTop: '1px solid #ddd',
+                color: '#666'
+            }}>
+                <p>API: https://api.bebederos.uy (localhost:3001 para desarrollo)</p>
+            </footer>
+        </div>
+    );
 }
 
-export default App
+export default App;

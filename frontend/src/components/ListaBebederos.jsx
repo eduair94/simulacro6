@@ -24,8 +24,10 @@ import { useSelector, useDispatch } from 'react-redux';
 import axios from 'axios';
 import { setItems } from '../store/bebederoSlice';
 
-// URL base de la API (el backend corre en puerto 3001)
-const API_URL = 'http://localhost:3001';
+// URL base de la API
+// En desarrollo: http://localhost:3001
+// En producci√≥n: se configura mediante variable de entorno VITE_API_URL
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
 
 /**
  * Componente ListaBebederos
@@ -153,7 +155,7 @@ const ListaBebederos = ({ bebederos: bebederosProp }) => {
                         
                         {/* Ubicaci√≥n */}
                         <p style={{ margin: '4px 0', color: '#666' }}>
-                            <strong>Ì≥ç Ubicaci√≥n:</strong> {bebedero.ubicacion}
+                            <strong>ÔøΩÔøΩÔøΩ Ubicaci√≥n:</strong> {bebedero.ubicacion}
                         </p>
                         
                         {/* Estado con badge de color */}
@@ -173,7 +175,7 @@ const ListaBebederos = ({ bebederos: bebederosProp }) => {
                         
                         {/* Caudal */}
                         <p style={{ margin: '4px 0', color: '#666' }}>
-                            <strong>Ì≤ß Caudal:</strong> {bebedero.caudal} L/min
+                            <strong>ÔøΩÔøΩÔøΩ Caudal:</strong> {bebedero.caudal} L/min
                         </p>
                     </article>
                 ))
