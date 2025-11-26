@@ -1,0 +1,21 @@
+{
+  "name": "simulacro6-backend",
+  "version": "1.0.0",
+  "description": "API REST para gestión de Bebederos - Simulacro 6",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node src/index.js",
+    "seed": "node src/seed.js"
+  },
+  "keywords": ["bebederos", "api", "express", "mongodb"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "joi": "^17.11.0",
+    "mongoose": "^8.0.0"
+  }
+}
