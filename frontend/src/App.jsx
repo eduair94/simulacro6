@@ -27,9 +27,11 @@ function App() {
             
             {/* Contenido principal */}
             <main style={{
-                maxWidth: '900px',
+                maxWidth: '1200px',
                 margin: '0 auto',
-                padding: '0 20px'
+                padding: '0 20px',
+                width: '100%',
+                boxSizing: 'border-box'
             }}>
                 {/* 
                   BebederosContainer incluye:
