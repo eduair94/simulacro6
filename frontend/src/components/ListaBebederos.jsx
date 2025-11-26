@@ -155,7 +155,7 @@ const ListaBebederos = ({ bebederos: bebederosProp }) => {
                         
                         {/* Ubicación */}
                         <p style={{ margin: '4px 0', color: '#666' }}>
-                            <strong>��� Ubicación:</strong> {bebedero.ubicacion}
+                            <strong>📍 Ubicación:</strong> {bebedero.ubicacion}
                         </p>
                         
                         {/* Estado con badge de color */}
@@ -175,7 +175,7 @@ const ListaBebederos = ({ bebederos: bebederosProp }) => {
                         
                         {/* Caudal */}
                         <p style={{ margin: '4px 0', color: '#666' }}>
-                            <strong>��� Caudal:</strong> {bebedero.caudal} L/min
+                            <strong>💧 Caudal:</strong> {bebedero.caudal} L/min
                         </p>
                     </article>
                 ))
