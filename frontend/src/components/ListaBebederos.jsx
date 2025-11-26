@@ -17,9 +17,9 @@
  * - useDispatch: Para disparar acciones de Redux
  */
 
-import { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
 import axios from 'axios';
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { setItems } from '../store/bebederoSlice';
 
 // URL base de la API

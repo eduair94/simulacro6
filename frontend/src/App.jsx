@@ -5,8 +5,8 @@
  * Renderiza el contenedor de bebederos con la funcionalidad completa.
  */
 
-import BebederosContainer from './components/BebederosContainer';
 import './App.css';
+import BebederosContainer from './components/BebederosContainer';
 
 function App() {
     return (
